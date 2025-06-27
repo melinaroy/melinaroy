@@ -1,4 +1,4 @@
-# My personal repo - Melina
+# My Personal Repo - Melina
 
 Personal repo for notes, ideas and technical references.
 

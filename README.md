@@ -19,7 +19,7 @@ This repository serves as a personal knowledge base. It includes course notes, p
 
 - [ ] Gather my courses notes and add them to the repo
 - [ ] Add cheat sheets for
-  - [ ] Git
+  - [x] Git
   - [ ] Python
   - [ ] Javascript
   - [ ] CLI tools

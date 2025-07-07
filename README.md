@@ -1,26 +1,33 @@
-# My Personal Repo - Melina
+![Status](https://img.shields.io/badge/status-active-brightgreen)
 
-Personal repo for notes, ideas and technical references.
+# 👋 Hi, I'm Mélina
 
-## 📖 Context
+I enjoy building useful tools with clean, maintainable, and scalable code — always with the end user in mind.
 
-This repository serves as a personal knowledge base. It includes course notes, project ideas, CLI commands I often forget, cheat sheets, and other useful resources I come across while learning and coding.
+With a background in product management and studies in biomedical engineering, I care about building tech that brings real value, especially in healthcare, 3D, gaming and finance. As a developer with a hybrid mindset, I bring structure, product thinking, and a constant focus on usability and quality.
 
-## 📁 Structure
+## 🧠 What I’m exploring
 
-```
-├── courses/    # notes and summaries from courses
-├── projects/ # project ideas, planning, architecture drafts
-├── cheatsheets/ # CLI commands, language syntax, shortcuts
-└── README.md
-```
+- Web development (JavaScript, Python, frontend/backend foundations)
+- Clean architecture and good practices for maintainable code
+- Upcoming projects: C++ and machine learning fundamentals
+- Personal tools for daily life (especially finance-related)
 
-## 🚀 What’s next
+## 🔨 Projects
 
-- [ ] Gather my courses notes and add them to the repo
-- [ ] Add cheat sheets for
-  - [x] Git
-  - [ ] Python
-  - [ ] Javascript
-  - [ ] CLI tools
-- [ ] Add my project ideas list
+- [propdf](https://github.com/melinaroy/propdf): my first real-world app — a PDF editor with GUI, now being refactored to improve structure and maintainability
+- [university-course-planner](https://github.com/melinaroy/university-course-planner): JavaScript-based tool to plan courses at Université Laval
+- [melina-learning](https://github.com/melina-learning): separate org where I store learning projects and university and online courses
+
+## 📚 Notes & References
+
+I organize notes, cheat sheets, project ideas, and personal references in this central repo. Most of it is for personal use, but it might be helpful to others too.<br>
+➡️ [melinaroy/melinaroy](https://github.com/melinaroy/melinaroy)
+
+### 📁 Structure
+
+    ├── courses/         # notes and summaries from courses
+    ├── cheatsheets/     # CLI commands, language syntax, shortcuts
+    ├── project-ideas.md # list of personal project ideas
+    ├── todo.md          # pending tasks and next steps
+    └── README.md

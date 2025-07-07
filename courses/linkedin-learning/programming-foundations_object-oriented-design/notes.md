@@ -66,3 +66,90 @@
   - +: design, implementation, interface, physical
 
 ## Uses Cases and User Stories
+
+- uses cases 3 essential things:
+  - title(what is the goal?)
+  - primary actor (who desires it?)
+  - success scenario (how is it accomplished?)
+  - optional: extensions, preconditions, postconditions, secondary actors, stakeholders, scope, priority, ownner
+- use cases prompts:
+  - Who performs system administration tasks?
+  - Who manages users and security?
+  - What happens if the system fails?
+  - is anyone looking at performance metrics or logs?
+- user story:
+  - As a (type of user)
+  - I want (goal)
+  - do that (reason)
+
+| user stories | use cases |
+| -------- | -------- |
+| short (one index card)   | long (a document)          |
+| one goal, no details   | multiple goals and details         |
+| informal   | casual to (very) formal        |
+| "Placeholder for conversation"   | "Record of conversation"   |
+
+### challenge
+
+![alt text](assets/use-cases_challenge.png)
+
+goal: write 2 use cases and 2 user stories
+
+use cases:
+
+1. Play a song
+
+  - Actor: astronaut
+  - Scenario:
+    1. System identifies user.
+    1. Astronaut browses albums.
+    1. Astronaut selects an album and browses songs fo the album.
+    1. Astronaut selects individual song.
+    1. Jukebox plays the selected song.
+
+1. Select the next song
+
+  - Actor: astronaut
+  - Scenario:
+    1. Astronaut selects a song while another song is playing.
+    1. Selected song is added to a queue.
+    1. When the song is first in the queue, jukebox plays the song.
+
+user stories:
+
+1. As an astronaut, I want to listen to music so that I can relax.
+1. As an astronaut, I want to be able to sort the albums by artist so that I don't need to know all the album titles.
+
+## Domain Modeling
+
+- moving from analysis to design phase
+- conceptual model: represents important objects and the relationships between them
+- to identify objects: list the nouns from the use cases
+  - draw lines between them for their relationships and add verbs on the lines
+- to identify responsibilities: list the verbs from the use cases
+- avoid god objects
+- Class Responsibility Collaboration (CRC) cards
+
+
+### challenge
+
+```mermaid
+graph TD
+
+user -->|browses| library
+user -->|browses| album
+user -->|selects| song
+library -->|contains| album
+album -->|contains| song
+jukebox -->|plays| song
+queue -->|identifies| user
+queue -->|contains| song
+```
+
+## Class Diagrams
+
+- best focus while creating classes: what does this class do? what's its role? > need to avoid seeing classes as data only, classes with no method is a red flag
+- camelCase
+- encapsulation: private (-) vs public (+)
+- static attributes and static methods
+- constructors and multiple constructions (polymorphism: overload, overriding)

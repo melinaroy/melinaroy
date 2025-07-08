@@ -70,4 +70,8 @@ git submodule update --init --recursive
 
 # submodule status
 git submodule status
+
+# remove submodule (or remove to change location)
+git submodule deinit <submodule_path>
+git rm -f <submodule_path>
 ```

@@ -10,22 +10,23 @@ git clone <url>
 
 # push changes (only pushes if remote hasn't changed since last fetch)
 git push --force-with-lease
+
+# apply local commits after the latest origin/main
+git rebase origin/main
+
+# reset current branch to match origin/main, discarding all local changes
+git reset --hard origin/main
+
+# list all remote branches (fetched but not necessarily tracked locally)
+git branch -r
+
+# create and switch to a local branch that tracks the remote one
+git checkout feature-x
 ```
 
 ## ✅ Status and staging
 
 ```bash
-# check status
-git status
-
-# stage all changes
-git add .
-
-# commit
-git commit -m "commit message"
-
-# amend last commit
-git commit --amend
 ```
 
 ## 🔧 Interactive Rebase

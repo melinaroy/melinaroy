@@ -12,11 +12,11 @@
 - all objects have:
   - identify: e.g. Olivia's coffee mug
   - attributes: color, size, fullness
-    - can also be called: properties, characterisitics, state, fields, variables
+    - can also be called: properties, characteristics, state, fields, variables
   - behaviors: fill(), empty(), clean()
     - can also be called: methods
 - objects = nouns (things, people, places, ideas, concepts), you can put the word "the" in front of it
-- bahaviors = verbs
+- behaviors = verbs
 - classes to create objects
 - class: code-template for creating program objects
   - class components:
@@ -24,14 +24,14 @@
     - attributes (or properties)
     - behaviors (or operations)
       - Method: a program procedure defined as part of a class that can return a value
-- 4 fondamental ideas when creating classes (APIE)
+- 4 fundamental ideas when creating classes (APIE)
   - Abstraction (focus on essential qualities of something)
   - Polymorphism ()
     - dynamic polymorphism: uses the same interface for methods on different types of objects
       - method overriding: inherit a method and override it
     - static polymorphism: method overload, e.g. vtk GetPoint()
       - method overloading: implements multiple methods with the same name but different parameters
-  - Inheritance (base a new object or class (subclass) on an existing one (superclass) to inherit existing attibutes and methods)
+  - Inheritance (base a new object or class (subclass) on an existing one (superclass) to inherit existing attributes and methods)
     - code reuse
   - Encapsulation (restricting access - an object should not make anything about itself, e.g. hide attribute and only accessible with methods) [Black Boxing]
     - to reduce dependencies
@@ -58,10 +58,10 @@
 - non-functional requirements: how should it do it? (legal, performance, support, security)
   - the system/app should be ...
 - FURPS+ requirements
-  - Fonctionality: capability, reusability, security
+  - Functionality: capability, reusability, security
   - Usability: human factors, aesthetics, consistency, documentation
-  - Reliability: avaialability, failure rate & duration, predictability
-  - Performance: speed, efficiency, resource comsumption, scalability
+  - Reliability: availability, failure rate & duration, predictability
+  - Performance: speed, efficiency, resource consumption, scalability
   - Supportability: testability, extensibility, serviceability, configurability
   - +: design, implementation, interface, physical
 
@@ -71,7 +71,7 @@
   - title(what is the goal?)
   - primary actor (who desires it?)
   - success scenario (how is it accomplished?)
-  - optional: extensions, preconditions, postconditions, secondary actors, stakeholders, scope, priority, ownner
+  - optional: extensions, pre-conditions, post-conditions, secondary actors, stakeholders, scope, priority, owner
 - use cases prompts:
   - Who performs system administration tasks?
   - Who manages users and security?
@@ -99,8 +99,8 @@ use cases:
 
 1. Play a song
 
-  - Actor: astronaut
-  - Scenario:
+- Actor: astronaut
+- Scenario:
     1. System identifies user.
     1. Astronaut browses albums.
     1. Astronaut selects an album and browses songs fo the album.
@@ -109,8 +109,8 @@ use cases:
 
 1. Select the next song
 
-  - Actor: astronaut
-  - Scenario:
+- Actor: astronaut
+- Scenario:
     1. Astronaut selects a song while another song is playing.
     1. Selected song is added to a queue.
     1. When the song is first in the queue, jukebox plays the song.
@@ -129,7 +129,6 @@ user stories:
 - to identify responsibilities: list the verbs from the use cases
 - avoid god objects
 - Class Responsibility Collaboration (CRC) cards
-
 
 ### challenge
 
@@ -153,3 +152,22 @@ queue -->|contains| song
 - encapsulation: private (-) vs public (+)
 - static attributes and static methods
 - constructors and multiple constructions (polymorphism: overload, overriding)
+
+## Inheritance and Composition
+
+- Inheritance: describes an "is a" relationship ("is a kind of", "is a type of")
+- abstract class:
+  - exists for other classes to inherit
+  - cannot be instantiated
+  - contains at least one abstract method
+- java has "final" class which is referred as a "concrete" class (the opposite of abstract); other classes cannot inherit from it
+- Interface: list of methods for a class to implement. It doesn't contain any actual behavior
+  - in class diagram, represented by a box similar to a class but with the tag <<interface>> and dashed arrows from classes using it
+- interface vs abstract class
+  - interfaces represent a capability; can be implement for different classes
+  - abstract class represent a type
+- aggregation: one object is built of other objects
+  - "has a" relationship, "uses a" or "uses many"
+  - in class diagram, represented by an unfilled diamond
+- composition: more specific form of aggregation which implies ownership
+  - in class diagram, represented by a filled diamond
